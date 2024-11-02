@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>Suprabhat Resume</h1>
+    </header>
+    </div>
+    <div><button id="toggleButton" class="button">Dark Mode</button></div>
+    <section>
+        <h2>Introduction</h2>
+        <p>Hello! My name is Suprabhat. I am passionate about AI. Welcome to my personal website
+            where you can learn more about me!</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>I complete my diploma in civil Engerring </li>
+            <li>Python</li>
+            <li>Team Leader</li>
+            <li>Confident</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Cricket</li>
+            <li>watching Movies</li>
+            <li>video Editing</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p>You can reach me at: <strong>sdk.email@example.com</strong></p>
+    </section>
+
+    <footer>
+        &copy; 2024 Suprabhat. All Rights Reserved.
+    </footer>
+
+</body>
+<script> 
+    const toggleButton = document.getElementById("toggleButton");
+    const body = document.body;
+
+    toggleButton.addEventListener('click', function () {
+        body.classList.toggle("dark-mode");
+        body.classList.toggle("light-mode");
+
+        // Change button text based on the mode
+        if (body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "Light Mode";
+        } else {
+            toggleButton.textContent = "Dark Mode";
+        }
+    });</script>
+
+</html>
